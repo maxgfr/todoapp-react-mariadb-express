@@ -15,7 +15,7 @@ services:
     links:
         - api
     networks:
-        webappnetwork
+        - webappnetwork
   api:
     build:                 ./api
     restart:               always
@@ -27,7 +27,7 @@ services:
     depends_on:
         - mariadb
     networks:
-        webappnetwork
+        - webappnetwork
   mariadb:
     image:                 mariadb
     container_name:        mariadb
@@ -35,4 +35,4 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: pass
     networks:
-            - webappnetwork
+      - webappnetwork
