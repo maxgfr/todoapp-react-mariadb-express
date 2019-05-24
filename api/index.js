@@ -11,10 +11,10 @@ app.get('/', (req, res) => {
   pool.getConnection()
     .then(conn => {
       conn.query("SELECT * from articles")
-        .then((res) => {
-          console.log(res);
+        .then((result) => {
+          console.log(result);
           conn.end();
-          res.json({data: res, success: true});
+          res.json({data: result, success: true});
         })
         .catch(err => {
           console.log(err);
@@ -34,10 +34,10 @@ app.post('/', (req, res) => {
   pool.getConnection()
       .then(conn => {
         conn.query("INSERT INTO articles value (?, ?, ?, ?, ?)", [req.body.author, req.body.status, req.body.section, req.body.ts, req.body.title])
-          .then((res) => {
-            console.log(res);
+          .then((result) => {
+            console.log(result);
             conn.end();
-            res.json({data: res, success: true});
+            res.json({data: result, success: true});
           })
           .catch(err => {
             console.log(err);
