@@ -2,11 +2,11 @@
 version:                   "3"
 networks:
   webappnetwork:
-    driver:            bridge
+    driver:                bridge
 services:
   client:
-    image:             webapp-client
-    restart:           always
+    build:                 ./client
+    restart:               always
     ports:
         - "3000:3000"
     volumes:
@@ -17,8 +17,8 @@ services:
     networks:
         webappnetwork
   api:
-    image:             webapp-api
-    restart:           always
+    build:                 ./api
+    restart:               always
     ports:
         - "9000:9000"
     volumes:
@@ -30,6 +30,7 @@ services:
         webappnetwork
   mariadb:
     image:                 mariadb
+    container_name:        mariadb
     restart:               always
     environment:
       MYSQL_ROOT_PASSWORD: pass

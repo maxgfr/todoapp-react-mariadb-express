@@ -3,7 +3,7 @@ const app = express()
 const cors = require('cors')
 const port = 8000
 const mariadb = require('mariadb');
-const pool = mariadb.createPool({host: 'mydb.com', user: 'myUser', connectionLimit: 5});
+const pool = mariadb.createPool({host: 'mariadb', port: 3306, user: 'root', password: 'pass', connectionLimit: 5});
 
 app.use(cors())
 
