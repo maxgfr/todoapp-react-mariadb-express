@@ -4,9 +4,10 @@ use tp3;
 CREATE TABLE articles
 (
 id INTEGER AUTO_INCREMENT,
+title TEXT,
 author TEXT,
 status TEXT,
+section TEXT,
 ts TEXT,
-title TEXT,
 PRIMARY KEY (id)
-) COMMENT='this is article table';
+) COMMENT='articles table';
