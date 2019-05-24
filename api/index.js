@@ -1,9 +1,9 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const port = 8000
 const mariadb = require('mariadb');
-const pool = mariadb.createPool({host: 'mariadb', port: 3306, user: 'root', password: 'pass'});
+const pool = mariadb.createPool({host: 'mariadb', port: 3306, user: 'root', password: 'root', database: 'tp3'});
+const port = 8000;
 
 app.use(cors())
 
@@ -33,7 +33,7 @@ app.post('/', (req, res) => {
   console.log(req.body);
   pool.getConnection()
       .then(conn => {
-        conn.query("INSERT INTO articles value (?, ?, ?, ?, ?)", [req.body.author, req.body.status, req.body.section, req.body.date, req.body.title])
+        conn.query("INSERT INTO articles value (?, ?, ?, ?, ?)", [req.body.author, req.body.status, req.body.section, req.body.ts, req.body.title])
           .then((res) => {
             console.log(res);
             conn.end();

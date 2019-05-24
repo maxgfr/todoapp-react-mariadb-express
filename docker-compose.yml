@@ -20,7 +20,7 @@ services:
     build:                 ./api
     restart:               always
     ports:
-        - "9000:9000"
+        - "8000:8000"
     volumes:
         - ./api:/api
         - /api/node_modules
@@ -29,10 +29,17 @@ services:
     networks:
         - webappnetwork
   mariadb:
-    image:                 mariadb
+    build:                 ./mariadb
     container_name:        mariadb
     restart:               always
     environment:
       MYSQL_ROOT_PASSWORD: pass
+    networks:
+      - webappnetwork
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "8080:8080"
     networks:
       - webappnetwork
