@@ -8,6 +8,7 @@ title TEXT,
 author TEXT,
 status TEXT,
 section TEXT,
+content TEXT,
 ts TEXT,
 PRIMARY KEY (id)
 ) COMMENT='articles table';

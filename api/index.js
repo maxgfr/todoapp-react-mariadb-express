@@ -36,7 +36,7 @@ app.post('/', (req, res) => {
   if(req.body) {
     pool.getConnection()
         .then(conn => {
-          conn.query("INSERT INTO articles value (?, ?, ?, ?, ?, ?)", [null, req.body.title, req.body.author, req.body.status, req.body.section, req.body.ts])
+          conn.query("INSERT INTO articles value (?, ?, ?, ?, ?, ?, ?)", [null, req.body.title, req.body.author, req.body.status, req.body.section, req.body.content, req.body.ts])
             .then((result) => {
               console.log(result);
               conn.end();

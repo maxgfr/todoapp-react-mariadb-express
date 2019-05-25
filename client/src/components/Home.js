@@ -1,71 +1,89 @@
 import React from "react";
-import { makeStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
-}
-
-const rows = [
-  createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-  createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-  createData('Eclair', 262, 16.0, 24, 6.0),
-  createData('Cupcake', 305, 3.7, 67, 4.3),
-  createData('Gingerbread', 356, 16.0, 49, 3.9),
-];
-
+import Typography from '@material-ui/core/Typography';
 
 class Home extends React.Component {
 
+  state = {
+    data: []
+  }
+
+  constructor(props) {
+    super(props);
+    console.log(props);
+  }
+
   componentDidMount() {
-    console.log('sisi');
+    fetch('http://localhost:8000', {
+        method: 'get'
+      }).then((response) => {
+        return response.json();
+      }).then((data) => {
+        console.log(data);
+        if(data.success) {
+          this.setState({data: data.data});
+        }
+      });
   }
 
   render() {
     return (
-        <Paper className={classes.root}>
-          <Table className={classes.table}>
-            <TableHead>
-              <TableRow>
-                <TableCell>Title</TableCell>
-                <TableCell align="right">Author</TableCell>
-                <TableCell align="right">Status</TableCell>
-                <TableCell align="right">Section</TableCell>
-                <TableCell align="right">Date</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {rows.map(row => (
-                <TableRow key={row.name}>
-                  <TableCell component="th" scope="row">{row.name}</TableCell>
-                  <TableCell align="right">{row.fat}</TableCell>
-                  <TableCell align="right">{row.carbs}</TableCell>
-                  <TableCell align="right">{row.carbs}</TableCell>
-                  <TableCell align="right">{row.protein}</TableCell>
+        <div className={this.props.classes.div}>
+        {
+          this.state.data.length === 0
+          ?
+          <Typography variant="h5" noWrap>The table is empty, please add element</Typography>
+          :
+          <Paper className={this.props.classes.root}>
+            <Table className={this.props.classes.table}>
+              <TableHead>
+                <TableRow>
+                  <TableCell>Title</TableCell>
+                  <TableCell align="right">Author</TableCell>
+                  <TableCell align="right">Status</TableCell>
+                  <TableCell align="right">Section</TableCell>
+                  <TableCell align="right">Date</TableCell>
                 </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </Paper>
+              </TableHead>
+              <TableBody>
+                {this.state.data.map((value, key) => (
+                  <TableRow key={key}>
+                    <TableCell component="th" scope="row">{value.title}</TableCell>
+                    <TableCell align="right">{value.author}</TableCell>
+                    <TableCell align="right">{value.status}</TableCell>
+                    <TableCell align="right">{value.section}</TableCell>
+                    <TableCell align="right">{value.ts}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </Paper>
+        }
+        </div>
     );
   }
 
 }
 
-const classes = makeStyles(theme => ({
+const styles = {
   root: {
     width: '100%',
-    marginTop: theme.spacing(3),
     overflowX: 'auto',
   },
   table: {
     minWidth: 650,
   },
-}));
+  div: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
+  }
+};
 
-export default Home;
+export default withStyles(styles)(Home);
