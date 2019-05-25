@@ -10,3 +10,9 @@ docker-compose up --build
 # to stop and delete it :
 docker-compose down --rmi 'all'
 ```
+
+## Architecture
+
+<div align="center">
+  <img src="https://github.com/maxgfr/react-mariadb/blob/master/screenshots/architecture.png" height="528,75" width="940"/>
+</div>
