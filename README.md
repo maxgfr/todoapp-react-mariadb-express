@@ -14,7 +14,7 @@ docker-compose down --rmi 'all'
 ## Architecture
 
 <div align="center">
-  <img src="https://github.com/maxgfr/react-mariadb/blob/master/screenshots/architecture.png" height="528,75" width="940"/>
+  <img src="https://github.com/maxgfr/react-mariadb/blob/master/screenshots/architecture.png" height="250" width="800"/>
 </div>
 
 ## The application
