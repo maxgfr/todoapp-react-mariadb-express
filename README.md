@@ -2,14 +2,8 @@
 
 ## Building & Running
 
-### To start the infrastructure
-
 ```bash
 docker-compose up --build
-```
-
-### To stop and remove the infrastructure
-
-```bash
+# to stop and delete it :
 docker-compose down --rmi 'all'
 ```
