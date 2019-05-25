@@ -12,7 +12,29 @@ app.use(cors());
 app.get('/', (req, res) => {
   pool.getConnection()
     .then(conn => {
-      conn.query("SELECT * from articles")
+      conn.query("SELECT * FROM articles")
+        .then((result) => {
+          console.log(result);
+          conn.end();
+          res.json({data: result, success: true});
+        })
+        .catch(err => {
+          console.log(err);
+          conn.end();
+          res.json({error: err, success: false});
+        })
+
+    }).catch(err => {
+      console.log(err);
+      res.json({error: err, success: false});
+    });
+
+})
+
+app.get('/published', (req, res) => {
+  pool.getConnection()
+    .then(conn => {
+      conn.query("SELECT * FROM articles WHERE status LIKE 'published'")
         .then((result) => {
           console.log(result);
           conn.end();

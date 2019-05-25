@@ -10,6 +10,11 @@ docker-compose up --build
 # to stop and delete it :
 docker-compose down --rmi 'all'
 ```
+## Endpoint
+
+1. To get all articles : `GET http://localhost:8000`
+2. To get articles which were published : `GET http://localhost:8000/published`
+3. To post an article : `POST http://localhost:8000`
 
 ## Architecture
 
