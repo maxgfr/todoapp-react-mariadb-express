@@ -1,4 +1,4 @@
-# react-mariadb
+# todoapp-react-mariadb-express
 
 Application which connect a MariaDB database with a client-server application based on React.js and Express.js
 
