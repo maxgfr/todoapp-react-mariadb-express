@@ -1,11 +1,12 @@
 repo_name: maxgfr/todoapp-react-mariadb-express
 report_id: 82e6461feb79ad16d19b0b8dd362292a
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-10T09:22:20+00:00'
+timestamp: '2024-01-05T08:56:10+00:00'
 requested_by: maxgfr
 provider: github
 branch: master
-detected_tools_count: 25
+detected_tools_count: 26
 tools:
 - name: CSS 3
   description: The latest evolution of the Cascading Style Sheets language
@@ -15,6 +16,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/maxgfr/todoapp-react-mariadb-express
   detection_source: Repo Metadata
 - name: JavaScript
   description: Lightweight, interpreted, object-oriented language with first-class
@@ -25,6 +27,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/maxgfr/todoapp-react-mariadb-express
   detection_source: Repo Metadata
 - name: SQL
   description: It is a domain-specific language used in programming
@@ -34,6 +37,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/2271/default_068d33483bba6b81ee13fbd4dc7aab9780896a54.png
+  detection_source_url: https://github.com/maxgfr/todoapp-react-mariadb-express/blob/master/mariadb/setup.sql
   detection_source: mariadb/setup.sql
   last_updated_by: "@maxgfr"
   last_updated_on: 2019-05-24 21:04:34.000000000 Z
@@ -48,7 +52,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Microframeworks (Backend)
   image_url: https://img.stackshare.io/service/1163/hashtag.png
-  detection_source_url: api/package-lock.json
+  detection_source_url: https://github.com/maxgfr/todoapp-react-mariadb-express/blob/master/api/package-lock.json
   detection_source: api/package.json
   last_updated_by: "@maxgfr"
   last_updated_on: 2019-05-24 08:08:14.000000000 Z
@@ -62,6 +66,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Front-End Frameworks
   image_url: https://img.stackshare.io/service/1904/default_44d81cb9fadbc3688b7e91a6d5217d0ea5358b57.png
+  detection_source_url: https://github.com/maxgfr/todoapp-react-mariadb-express/blob/master/client/package.json
   detection_source: client/package.json
   last_updated_by: "@maxgfr"
   last_updated_on: 2019-05-25 08:20:01.000000000 Z
@@ -74,7 +79,8 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png
-  detection_source: client/Dockerfile
+  detection_source_url: https://github.com/maxgfr/todoapp-react-mariadb-express/blob/master/api/Dockerfile
+  detection_source: api/Dockerfile
   last_updated_by: "@maxgfr"
   last_updated_on: 2019-05-24 08:08:14.000000000 Z
 - name: React
@@ -87,7 +93,7 @@ tools:
   category: Libraries
   sub_category: Javascript UI Libraries
   image_url: https://img.stackshare.io/service/1020/OYIaJ1KK.png
-  detection_source_url: client/package-lock.json
+  detection_source_url: https://github.com/maxgfr/todoapp-react-mariadb-express/blob/master/client/package-lock.json
   detection_source: client/package.json
   last_updated_by: "@maxgfr"
   last_updated_on: 2019-05-25 08:20:01.000000000 Z
@@ -101,7 +107,7 @@ tools:
   category: Libraries
   sub_category: JavaScript Framework Components
   image_url: https://img.stackshare.io/service/3350/8261421.png
-  detection_source_url: client/package-lock.json
+  detection_source_url: https://github.com/maxgfr/todoapp-react-mariadb-express/blob/master/client/package-lock.json
   detection_source: client/package.json
   last_updated_by: "@maxgfr"
   last_updated_on: 2019-05-25 08:20:01.000000000 Z
@@ -114,6 +120,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Virtual Machine Platforms & Containers
   image_url: https://img.stackshare.io/service/586/n4u37v9t_400x400.png
+  detection_source_url: https://github.com/maxgfr/todoapp-react-mariadb-express
   detection_source: Repo Metadata
 - name: Git
   description: Fast, scalable, distributed revision control system
@@ -123,6 +130,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/maxgfr/todoapp-react-mariadb-express
   detection_source: Repo Metadata
 - name: Yarn
   description: A new package manager for JavaScript
@@ -132,6 +140,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/5848/44mC-kJ3.jpg
+  detection_source_url: https://github.com/maxgfr/todoapp-react-mariadb-express/blob/master/client/yarn.lock
   detection_source: client/yarn.lock
   last_updated_by: "@maxgfr"
   last_updated_on: 2019-05-24 07:35:15.000000000 Z
@@ -143,6 +152,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/maxgfr/todoapp-react-mariadb-express/blob/master/client/package.json
   detection_source: client/package.json
   last_updated_by: "@maxgfr"
   last_updated_on: 2019-05-24 07:35:15.000000000 Z
@@ -152,6 +162,7 @@ tools:
   open_source: false
   hosted_saas: false
   image_url: https://img.stackshare.io/service/7285/icon.png
+  detection_source_url: https://github.com/maxgfr/todoapp-react-mariadb-express/blob/master/docker-compose.yml
   detection_source: docker-compose.yml
   last_updated_by: "@maxgfr"
   last_updated_on: 2019-05-24 21:04:34.000000000 Z
@@ -164,7 +175,7 @@ tools:
   category: Libraries
   sub_category: Javascript Utilities & Libraries
   image_url: https://img.stackshare.io/service/2438/lodash.png
-  detection_source_url: client/package-lock.json
+  detection_source_url: https://github.com/maxgfr/todoapp-react-mariadb-express/blob/master/client/package-lock.json
   detection_source: client/package.json
   last_updated_by: "@maxgfr"
   last_updated_on: 2019-05-25 08:20:01.000000000 Z
@@ -175,6 +186,7 @@ tools:
   open_source: false
   hosted_saas: false
   image_url: https://img.stackshare.io/service/10155/no-img-open-source.png
+  detection_source_url: https://github.com/maxgfr/todoapp-react-mariadb-express/blob/master/client/package.json
   detection_source: client/package.json
   last_updated_by: "@maxgfr"
   last_updated_on: 2019-05-25 08:20:01.000000000 Z
@@ -188,7 +200,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16271/default_f04d39fc656c2e32ee1b9d3875a3002459aa3b69.png
-  detection_source_url: client/package-lock.json
+  detection_source_url: https://github.com/maxgfr/todoapp-react-mariadb-express/blob/master/client/package-lock.json
   detection_source: client/package.json
   last_updated_by: "@maxgfr"
   last_updated_on: 2019-05-25 08:20:01.000000000 Z
@@ -202,7 +214,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16471/default_73c88a18b684e01cbdbf945631a40a44aff5a777.png
-  detection_source_url: client/package-lock.json
+  detection_source_url: https://github.com/maxgfr/todoapp-react-mariadb-express/blob/master/client/package-lock.json
   detection_source: client/package.json
   last_updated_by: "@maxgfr"
   last_updated_on: 2019-05-25 08:20:01.000000000 Z
@@ -216,7 +228,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15906/default_7c39a83d4acd952df89b1ebfdb94c8646324fbf1.png
-  detection_source_url: api/package-lock.json
+  detection_source_url: https://github.com/maxgfr/todoapp-react-mariadb-express/blob/master/api/package-lock.json
   detection_source: api/package.json
   last_updated_by: "@maxgfr"
   last_updated_on: 2019-05-24 21:22:01.000000000 Z
@@ -230,10 +242,24 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16165/default_41f04716a804e853d5c38a5b81ee0ea8a842ad82.png
-  detection_source_url: api/package-lock.json
+  detection_source_url: https://github.com/maxgfr/todoapp-react-mariadb-express/blob/master/api/package-lock.json
   detection_source: api/package.json
   last_updated_by: "@maxgfr"
   last_updated_on: 2019-05-24 08:08:14.000000000 Z
+- name: downshift
+  description: A set of primitives to build simple
+  package_url: https://www.npmjs.com/downshift
+  version: 3.2.10
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18017/default_ab659b5159df20d1c32f07b936d63628134f5b3d.png
+  detection_source_url: https://github.com/maxgfr/todoapp-react-mariadb-express/blob/master/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: "@maxgfr"
+  last_updated_on: 2019-05-25 08:20:01.000000000 Z
 - name: express
   description: Fast, unopinionated, minimalist web framework
   package_url: https://www.npmjs.com/express
@@ -244,7 +270,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15818/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
-  detection_source_url: api/package-lock.json
+  detection_source_url: https://github.com/maxgfr/todoapp-react-mariadb-express/blob/master/api/package-lock.json
   detection_source: api/package.json
   last_updated_by: "@maxgfr"
   last_updated_on: 2019-05-24 08:08:14.000000000 Z
@@ -265,7 +291,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15843/default_b71c906aeda030a5e2f1fe40bf12a93be52404ab.png
-  detection_source_url: client/package-lock.json
+  detection_source_url: https://github.com/maxgfr/todoapp-react-mariadb-express/blob/master/client/package-lock.json
   detection_source: client/package.json
   last_updated_by: "@maxgfr"
   last_updated_on: 2019-05-25 08:20:01.000000000 Z
@@ -279,7 +305,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15808/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
-  detection_source_url: client/package-lock.json
+  detection_source_url: https://github.com/maxgfr/todoapp-react-mariadb-express/blob/master/client/package-lock.json
   detection_source: client/package.json
   last_updated_by: "@maxgfr"
   last_updated_on: 2019-05-25 08:20:01.000000000 Z
@@ -293,7 +319,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16025/default_e25d1fbb04a118c79fb444294461417342bd03bf.png
-  detection_source_url: client/package-lock.json
+  detection_source_url: https://github.com/maxgfr/todoapp-react-mariadb-express/blob/master/client/package-lock.json
   detection_source: client/package.json
   last_updated_by: "@maxgfr"
   last_updated_on: 2019-05-25 08:20:01.000000000 Z
@@ -307,7 +333,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15985/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
-  detection_source_url: client/package-lock.json
+  detection_source_url: https://github.com/maxgfr/todoapp-react-mariadb-express/blob/master/client/package-lock.json
   detection_source: client/package.json
   last_updated_by: "@maxgfr"
   last_updated_on: 2019-05-25 08:20:01.000000000 Z
@@ -321,7 +347,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/18618/default_632bbfb948e0ea8f8e1cc2caaa8946b66a13d200.png
-  detection_source_url: client/package-lock.json
+  detection_source_url: https://github.com/maxgfr/todoapp-react-mariadb-express/blob/master/client/package-lock.json
   detection_source: client/package.json
   last_updated_by: "@maxgfr"
   last_updated_on: 2019-05-25 08:20:01.000000000 Z
