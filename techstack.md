@@ -3,16 +3,16 @@
 ## Tech Stack
 maxgfr/todoapp-react-mariadb-express is built on the following main stack:
 
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
+- [SQL](https://en.wikipedia.org/wiki/SQL) – Languages
+- [ExpressJS](http://expressjs.com/) – Microframeworks (Backend)
+- [Material-UI](https://github.com/mui/material-ui) – Front-End Frameworks
 - [Node.js](http://nodejs.org/) – Frameworks (Full Stack)
 - [React](https://reactjs.org/) – Javascript UI Libraries
-- [ExpressJS](http://expressjs.com/) – Microframeworks (Backend)
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
-- [Material-UI](https://github.com/mui/material-ui) – Front-End Frameworks
-- [SQL](https://en.wikipedia.org/wiki/SQL) – Languages
-- [Lodash](https://lodash.com) – Javascript Utilities & Libraries
 - [React Router](https://github.com/rackt/react-router) – JavaScript Framework Components
-- [Yarn](https://yarnpkg.com/) – Front End Package Manager
 - [Docker](https://www.docker.com/) – Virtual Machine Platforms & Containers
+- [Yarn](https://yarnpkg.com/) – Front End Package Manager
+- [Lodash](https://lodash.com) – Javascript Utilities & Libraries
 
 Full tech stack [here](/techstack.md)
 
@@ -22,16 +22,16 @@ Full tech stack [here](/techstack.md)
 ## Tech Stack
 maxgfr/todoapp-react-mariadb-express is built on the following main stack:
 
+- <img width='25' height='25' src='https://img.stackshare.io/service/1209/javascript.jpeg' alt='JavaScript'/> [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
+- <img width='25' height='25' src='https://img.stackshare.io/service/2271/default_068d33483bba6b81ee13fbd4dc7aab9780896a54.png' alt='SQL'/> [SQL](https://en.wikipedia.org/wiki/SQL) – Languages
+- <img width='25' height='25' src='https://img.stackshare.io/service/1163/hashtag.png' alt='ExpressJS'/> [ExpressJS](http://expressjs.com/) – Microframeworks (Backend)
+- <img width='25' height='25' src='https://img.stackshare.io/service/1904/default_44d81cb9fadbc3688b7e91a6d5217d0ea5358b57.png' alt='Material-UI'/> [Material-UI](https://github.com/mui/material-ui) – Front-End Frameworks
 - <img width='25' height='25' src='https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png' alt='Node.js'/> [Node.js](http://nodejs.org/) – Frameworks (Full Stack)
 - <img width='25' height='25' src='https://img.stackshare.io/service/1020/OYIaJ1KK.png' alt='React'/> [React](https://reactjs.org/) – Javascript UI Libraries
-- <img width='25' height='25' src='https://img.stackshare.io/service/1163/hashtag.png' alt='ExpressJS'/> [ExpressJS](http://expressjs.com/) – Microframeworks (Backend)
-- <img width='25' height='25' src='https://img.stackshare.io/service/1209/javascript.jpeg' alt='JavaScript'/> [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
-- <img width='25' height='25' src='https://img.stackshare.io/service/1904/default_44d81cb9fadbc3688b7e91a6d5217d0ea5358b57.png' alt='Material-UI'/> [Material-UI](https://github.com/mui/material-ui) – Front-End Frameworks
-- <img width='25' height='25' src='https://img.stackshare.io/service/2271/default_068d33483bba6b81ee13fbd4dc7aab9780896a54.png' alt='SQL'/> [SQL](https://en.wikipedia.org/wiki/SQL) – Languages
-- <img width='25' height='25' src='https://img.stackshare.io/service/2438/lodash.png' alt='Lodash'/> [Lodash](https://lodash.com) – Javascript Utilities & Libraries
 - <img width='25' height='25' src='https://img.stackshare.io/service/3350/8261421.png' alt='React Router'/> [React Router](https://github.com/rackt/react-router) – JavaScript Framework Components
-- <img width='25' height='25' src='https://img.stackshare.io/service/5848/44mC-kJ3.jpg' alt='Yarn'/> [Yarn](https://yarnpkg.com/) – Front End Package Manager
 - <img width='25' height='25' src='https://img.stackshare.io/service/586/n4u37v9t_400x400.png' alt='Docker'/> [Docker](https://www.docker.com/) – Virtual Machine Platforms & Containers
+- <img width='25' height='25' src='https://img.stackshare.io/service/5848/44mC-kJ3.jpg' alt='Yarn'/> [Yarn](https://yarnpkg.com/) – Front End Package Manager
+- <img width='25' height='25' src='https://img.stackshare.io/service/2438/lodash.png' alt='Lodash'/> [Lodash](https://lodash.com) – Javascript Utilities & Libraries
 
 Full tech stack [here](/techstack.md)
 
@@ -42,7 +42,7 @@ Full tech stack [here](/techstack.md)
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [maxgfr/todoapp-react-mariadb-express](https://github.com/maxgfr/todoapp-react-mariadb-express)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|26<br/>Tools used|01/05/24 <br/>Report generated|
+|26<br/>Tools used|02/29/24 <br/>Report generated|
 |------|------|
 </div>
 
